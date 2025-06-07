@@ -1,0 +1,24 @@
+{
+  "name": "sunvoy-user-scraper",
+  "version": "1.0.0",
+  "description": "Node.js + TypeScript script to reverse engineer internal API calls from the legacy Sunvoy app (https://challenge.sunvoy.com). Logs in using credentials, fetches the full user list and the currently authenticated user, and writes the output to a structured users.json file.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node --loader ts-node/esm src/index.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.9.0",
+    "axios-cookiejar-support": "^6.0.2",
+    "dotenv": "^16.5.0",
+    "tough-cookie": "^5.1.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.30",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  }
+}
